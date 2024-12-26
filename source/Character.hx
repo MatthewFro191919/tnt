@@ -435,6 +435,36 @@ class Character extends FlxNestedSkewSprite
 				setGraphicSize(Std.int(width * 6));
 				updateHitbox();
 
+			case 'shaggy':
+				antialiasing = false;
+				frames = Paths.getSparrowAtlasFunk("characters/shaggy");
+				// animation.addByPrefix('idle', 'shaggy_idle0', 24, false);
+				// animation.addByPrefix('idle2', 'shaggy_idle2', 24, false);
+				animation.addByPrefix('danceLeft', 'shaggy_idle0', 24, false);
+				animation.addByPrefix('danceRight', 'shaggy_idle2', 24, false);
+				animation.addByPrefix('singUP', 'shaggy_up', 24, false);
+				animation.addByPrefix('singLEFT', 'shaggy_right', 24, false);
+				animation.addByPrefix('singRIGHT', 'shaggy_left', 24, false);
+				animation.addByPrefix('singDOWN', 'Sshaggy_down', 24, false);
+
+				camOffsets = [150, 50];
+				posOffsets = [0, 0];
+
+				// addOffset('idle', 0, 0);
+                                // addOffset('idle2', -30, 0);
+				// addOffset('danceLeft', 0, 0);
+				// addOffset('danceRight', -30, 0);
+				// addOffset("singUP", -36, 27);
+				// addOffset("singRIGHT", -61, ‎-108‎);
+				// addOffset("singLEFT", 132, -41);
+				// addOffset("singDOWN", 90, -160);
+
+				// playAnim('idle');
+				playAnim('danceRight');
+
+				setGraphicSize(Std.int(width * 1));
+				updateHitbox();
+
 			case 'nothing':
 				antialiasing = false;
 				loadGraphic(FlxGraphic.fromRectangle(1, 1, FlxColor.TRANSPARENT));
