@@ -163,6 +163,7 @@ class Main extends Sprite
 		addCharacter("atlanta", "Atlanta", "I'm pretty so-Fish-ticated myself!",
 			"A literal fish out of water, she's trying her best to fit in with the land-dwellers. All while cracking fish puns in every sentence, she can be pretty obnoxious at times.",
 			"Tune-A-Fish", 0x4c6b9b, "Ket Overkill");
+		addCharacter("shaggy", "Shaggy", "Zoinks", "Norville Shaggy Rogers is a character from the Scooby-Doo franchise.", "Where-Are-You", 0x33724A, "");
 
 		characterColors["gf"] = 0xa5004d;
 		characterColors["prisma"] = 0x9fd5ed;
@@ -170,6 +171,7 @@ class Main extends Sprite
 		characterColors["pump"] = 0xd57e00;
 		characterColors["senpai"] = 0xfac146;
 		characterColors["tankman"] = 0x383838;
+		characterColors["shaggy"] = 0x33724A;
 		charToSong["prisma"] = "Fresnel";
 		charToSong["prisma2"] = "SiO2";
 
@@ -180,6 +182,7 @@ class Main extends Sprite
 		setCampaign("mom", ["pico", "dad", "spooky", "atlanta", "bf", "lily", "prisma"], ["easy", "easy", "normal", "normal", "hard", "hard", "normal"]);
 		setCampaign("lily", ["bf", "atlanta", "dad", "mom", "pico", "spooky", "prisma2"], ["easy", "easy", "normal", "normal", "hard", "hard", "normal"]);
 		setCampaign("atlanta", ["mom", "spooky", "bf", "dad", "lily", "pico", "prisma2"], ["easy", "easy", "normal", "normal", "hard", "hard", "normal"]);
+		setCampaign("shaggy", ["mom", "spooky", "atlanta", "bf", "dad", "lily", "pico", "prisma2"], ["easy", "easy", "normal", "normal","normal", "hard", "hard", "normal"]);
 	}
 
 	public static function changeFramerate(newRate:Int)
