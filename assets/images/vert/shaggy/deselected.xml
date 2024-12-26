@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="deselected.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="deselected0000" x="0" y="0" width="290" height="788" frameX="-5" frameY="-13" frameWidth="293" frameHeight="813"/>
+</TextureAtlas>
