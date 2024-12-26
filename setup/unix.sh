@@ -18,6 +18,7 @@ haxelib install hxCodec 2.5.1
 haxelib install hscript
 haxelib install away3d
 haxelib install openfl-glsl
+haxelib install openfl-gpu-particles
 haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit
 haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
 haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
