@@ -1001,6 +1001,15 @@ class PlayState extends MusicBeatState
 				fore.antialiasing = true;
 				fore.active = false;
 				add(fore);
+			case 'mansion':
+				defaultCamZoom = 0.9;
+				curStage = 'mansion';
+				var bg:FlxSprite = new FlxSprite(-400, -160).loadGraphic(Paths.image('bg_lemon'));
+				bg.setGraphicSize(Std.int(bg.width * 1.5));
+				bg.antialiasing = true;
+				bg.scrollFactor.set(0.95, 0.95);
+				bg.active = false;
+				add(bg);
 			case 'atlantaStage':
 				curStage = 'atlantaStage';
 
